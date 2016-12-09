@@ -25,17 +25,17 @@
 	</header>
 
 	<section>
-		<form>
+		<form action="/var/www/html/get-param.php" method="get">
 
 		<div class="searchinfo">
 
-			<select id="searching" style="position: relative; bottom: -2px;">
+			<select id="searching" name="whatinfo" style="position: relative; bottom: -2px;">
 			<option value="name">이름</option>
 			<option value="Dnum">송장번호</option>
 			<option value="weight">무게</option>
 			</select>
 
-			<input type="text" name="searh" id="search" placeholder="원하는 정보를 입력하세요" required>
+			<input type="text" name="searh" id="info" placeholder="원하는 정보를 입력하세요" required>
 
 			<input type="submit" id="sub" value="검색" style="height: 22px; position: relative; bottom:-2px;">
 		</div>
